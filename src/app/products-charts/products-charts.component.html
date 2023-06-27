@@ -1,0 +1,45 @@
+<div id="content">
+<mat-toolbar color="accent">
+  <a mat-button routerLink="/products">Productos</a>
+  <a mat-button routerLink="/new-product">Añadir producto</a>
+</mat-toolbar>
+
+  <mat-card>
+    <mat-card-title>Gráficas de Productos</mat-card-title>
+    <div id="graphcontent">
+      <mat-card-content >
+        <ngx-charts-bar-horizontal id="g1" *ngIf="loadG1"
+
+        [results]="activeData"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="false"
+        [scheme]="colorScheme"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxisLabel]="'Productos'"
+        [yAxisLabel]="'Cantidad'">
+    </ngx-charts-bar-horizontal>
+
+      </mat-card-content>
+      <mat-card-content >
+        <ngx-charts-pie-chart id="g2" *ngIf="loadG2" [results]="priceData" [scheme]="colorScheme" [labels]="true"></ngx-charts-pie-chart>
+      </mat-card-content>
+      <mat-card-content  >
+        <ngx-charts-bar-vertical id="g3" *ngIf="loadG3"
+        [results]="dateAddData"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="false"
+        [scheme]="colorScheme"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxisLabel]="'Período'"
+        [yAxisLabel]="'Cantidad'">
+      </ngx-charts-bar-vertical>
+
+      </mat-card-content>
+    </div>
+  </mat-card>
+    <footer> © 本当に学び続けたいです </footer>
+</div>

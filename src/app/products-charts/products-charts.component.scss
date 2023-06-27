@@ -1,0 +1,93 @@
+#content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #424242;
+}
+
+#graphcontent {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  margin: 2vw;
+
+  // border: 3px blue solid;
+}
+
+mat-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px #69f0ae solid;
+  border-radius: 50px 0;
+  margin: 1vw;
+}
+// svg.ngx-charts {
+//   height: 200vh;
+// }
+// path.arc {
+//   height: 200vh;
+// }
+
+// mat-card {
+
+//   border: 3px solid yellow;
+// }
+
+mat-card-title {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  color: #69f0ae;
+  background-color: #424242;
+}
+mat-toolbar.mat-toolbar {
+  height: 6vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+mat-toolbar.mat-toolbar a:hover {
+  // background-color: #8be6bafd;
+  color: rgb(195, 30, 210);
+}
+
+mat-card.mat-card {
+  box-shadow: 0 0.4px 2px 0 rgba(105, 240, 174, 0.5);
+}
+
+// ::ng-deep .label {
+//   color: red !important;
+// }
+
+// #graphcontent > mat-card-content:nth-child(1) > ngx-charts-bar-horizontal > ngx-charts-chart > div > svg > g > g:nth-child(2) > g > g:nth-child(2)
+// {
+//   color:#69f0ae !important;
+// }
+
+// g text{
+
+//   color: #69f0ae !important;
+// }
+// g.tick.ng-star-inserted text{
+//   color: #69f0ae;
+// }
+// ngx-charts-bar-horizontal g text {
+//   color: red !important;
+// }
+::ng-deep .ngx-charts {
+  text {
+    fill: #fff !important;
+  }
+}
+// mat-card-title {
+//   font-family: "Lato", sans-serif;
+// }

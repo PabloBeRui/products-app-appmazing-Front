@@ -1,0 +1,53 @@
+<mat-toolbar color="accent">
+  <a mat-button routerLink="/">Gráficas</a>
+  <a mat-button routerLink="/products">Productos</a>
+
+
+  </mat-toolbar>
+
+
+<mat-card>
+  <mat-card-title>Añadir Producto</mat-card-title>
+  <form (submit)="newProduct()">
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" name="name" [(ngModel)]="name"><br>
+
+
+    </mat-form-field>
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>Stock</mat-label>
+      <input matInput type="number" name="stock" [(ngModel)]="stock"><br>
+
+
+    </mat-form-field>
+
+  <mat-form-field color="accent" appearance="outline">
+    <mat-label>Precio</mat-label>
+    <input matInput type="number" name="price" [(ngModel)]="price"><br>
+
+
+  </mat-form-field>
+
+  <mat-radio-group [(ngModel)]="active" name="active">
+    <mat-radio-button color="accent" value="true">Activo</mat-radio-button>
+    <mat-radio-button color="accent" value="false">Inactivo</mat-radio-button>
+  </mat-radio-group>
+
+
+  <mat-form-field color="accent" appearance="outline">
+    <mat-label>Añadido</mat-label>
+    <input matInput type="date" name="date_added" [(ngModel)]="date_added"><br>
+
+
+  </mat-form-field>
+
+  <button mat-button color="accent" type="submit" id="buttonAdd">Agregar</button>
+
+
+
+
+  </form>
+
+  </mat-card>
+  <footer> © 本当に学び続けたいです </footer>

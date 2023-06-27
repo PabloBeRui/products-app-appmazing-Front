@@ -1,0 +1,145 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  color: #69f0ae;
+  background-color: #424242;
+}
+mat-toolbar.mat-toolbar {
+  height: 6vh;
+  // border-bottom-left-radius: 10px;
+  // border-bottom-right-radius: 10px;
+}
+
+mat-toolbar.mat-toolbar a:hover {
+  // background-color: #8be6bafd;
+  color: rgb(195, 30, 210);
+}
+
+mat-card.mat-card {
+  box-shadow: 0 0.4px 2px 0 rgba(105, 240, 174, 0.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 0 auto;
+  gap: 0.95rem;
+}
+
+mat-radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+mat-card-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+#buttonAdd {
+  border: 1px solid #69f0ae;
+}
+input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+mat-card {
+  height: 84.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #69f0ae;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#productSpec {
+  display: flex;
+  gap: 1rem;
+}
+
+// div p{
+//   display: flex;
+//   justify-content: center;
+//   color: yellow;
+// }
+
+div#productSpec {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+// mat-label {
+//   text-align: center;
+// }
+
+// .mat-form-field-wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .mat-form-field-label-wrapper {
+//   width: 100%;
+// }
+
+// .mat-input-element {
+//   text-align: center;
+// }
+div#productSpec p {
+  /* Define el ancho de tus párrafos <p> */
+  width: 200px;
+  /* Para prevenir que el texto se salga de sus contenedores <p> */
+  overflow: hidden;
+  /* Para añadir puntos suspensivos al final del texto si es demasiado largo */
+  text-overflow: ellipsis;
+  /* Para asegurar que el texto no se salga del párrafo <p> */
+  white-space: nowrap;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+  width: 20vw;
+}
+
+mat-icon {
+  margin-left: 6rem;
+  color: #69f0ae;
+}
+#button {
+  border: 1px solid #69f0ae;
+  color: #69f0ae;
+  background-color: #424242;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+#button:hover {
+  background-color: rgba(105, 240, 174,0.2);
+}
+
+p
+{
+  font-size: 1.2rem;
+}

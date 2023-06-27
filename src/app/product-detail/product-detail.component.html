@@ -1,0 +1,23 @@
+<mat-toolbar color="accent">
+  <a mat-button routerLink="/">Gráficas</a>
+  <a mat-button routerLink="/products">Productos</a>
+  <a mat-button routerLink="/new-product">Añadir producto</a>
+
+  </mat-toolbar>
+<div id="matCardContent">
+<mat-card>
+  <mat-card-content>
+      <div id="productSpec"><mat-icon>
+        qr_code_scanner
+        </mat-icon><p>{{product.name}}</p></div>
+      <div id="productSpec"><mat-icon>inventory_2</mat-icon><p>{{product.stock}}</p></div>
+      <div id="productSpec"><mat-icon>euro</mat-icon><p>{{product.price}}</p></div>
+      <div id="productSpec"><mat-icon>production_quantity_limits</mat-icon><p>{{product.active? 'Disponible' : 'No disponible'}}</p></div>
+      <div id="productSpec"><mat-icon>history</mat-icon><p>{{product.date_added| date:'dd/MM/yyyy'}}</p></div>
+  </mat-card-content>
+  <mat-card-actions>
+      <button id="button" mat-raised-button color="accent" (click)=" goToUpdateProduct()">Actualizar</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+<footer> © 本当に学び続けたいです </footer>
